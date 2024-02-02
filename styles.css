@@ -1,12 +1,166 @@
-.container{
-    max-width: 600px;
+body{
+    background: rgb(66, 179, 179);
 }
-.btn{
-    background: #43d9be;
+.container-main{
+    background: rgb(231, 253, 253);
+    margin: 30px 150px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 8px solid rgb(14, 146, 146);
+    box-shadow: 10px 10px 7px rgb(39, 136, 136);  
+}
+.intro{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Courier New', monospace;
+    color: maroon;
+    margin: 0px;
+}
+.intro-head{
+    font-size: 40px;
+}
+.result{
+    display: none;
+}
+.score{
+    font-size: 35px;
+}
+.result-display{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(102, 12, 12);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    
+}
+.quiz{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 6px auto;
+  
+}
+.quiz-que{
+    font-weight: bold;
+}
+.form-lead{
+    color: black;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.submit{
+    text-align: center;
+}
+.submit-button{
+    padding: 8px;
+    border: 5px solid rgb(12, 138, 138);
+    border-radius: 20px ;
     color: white;
-    outline: none !important;
-    box-shadow: none !important;
+    background-color: rgb(12, 138, 138); 
+    letter-spacing: 1px;
+    font-size: 20px;
 }
-.btn:focus{
-    outline: none !important;
+@media screen and (max-width: 1300px){
+    .container-main{
+        margin: 30px 100px; 
+    }
+    .quiz{
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+}
+@media screen and (max-width: 1150px){
+    .container-main{
+        margin: 30px 90px;
+        border: 7px solid rgb(14, 146, 146);
+    } 
+    .quiz{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container-main{
+        margin: 30px 70px;
+    } 
+    .quiz {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .form-lead{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 900px){
+    .container-main{
+        margin: 30px 50px;
+        border-radius: 18px;
+        border: 6px solid rgb(14, 146, 146);
+        
+    } 
+    .quiz {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form-lead{
+        font-size: 18px;
+    }
+    .intro-head {
+        font-size: 25px;
+    }
+    .result-display{
+        font-size: 25px;
+    }
+    .submit-button{
+        padding: 6px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 650px){
+    .container-main{
+        margin: 20px 25px;
+        border-radius: 18px; 
+    } 
+    .quiz {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .form-lead{
+        font-size: 17px;
+    }
+    .intro-head {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .result-display{
+        font-size: 20px;
+    }
+    .submit-button{
+        padding: 4px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 350px){
+    .container-main{
+        margin: 10px 1px;
+        border-radius: 18px; 
+    } 
+    .quiz {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .form-lead{
+        font-size: 16px;
+    }
+    .intro-head {
+        font-size: 16
+        px;
+        padding-bottom: 18px;
+    }
+    .result-display{
+        font-size: 16px;
+    }
+    .submit-button{
+        padding: 3px;
+        font-size: 10px;
+    }
 }
